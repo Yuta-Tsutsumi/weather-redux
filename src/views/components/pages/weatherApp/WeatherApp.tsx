@@ -1,9 +1,9 @@
 import React from "react";
 import TodayForecast from "../../todayForecast/TodayForecast";
 import SearchForm from "../../searchForm/SearchForm";
-import HourlyForecastGraph from "../../HourlyForecastGraph/HourlyForecastGraph";
+import HourlyForecastGraph from "../../hourlyForecastGraph/HourlyForecastGraph";
 import WeeklyForecast from "../../weeklyForecast/WeeklyForecast";
-import GoogleMapComponents from "../../GoogleMapComponents/GoogleMapComponents";
+import GoogleMapComponents from "../../googleMapComponents/GoogleMapComponents";
 import styles from "./WeatherApp.module.scss";
 
 const WeatherApp: React.FC = () => {
