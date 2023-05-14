@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherApp from "./views/components/pages/weatherApp/WeatherApp";
+import WeatherApp from "./views/pages/weatherApp/WeatherApp";
 import styles from "./App.module.scss";
 
 const App: React.FC = () => {
