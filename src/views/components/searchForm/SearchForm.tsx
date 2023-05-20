@@ -4,7 +4,8 @@ import { geocoding } from "../../../api/geocoding";
 import { fetchTodayForecast } from "../../../api/openWeather";
 import styles from "./SearchForm.module.scss";
 
-const SearchForm: React.VFC = () => {
+const SearchForm: React.FC = () => {
+  const ApiKey = process.env.REACT_APP_OPENWEATEHR_APIKEY;
   // 入力欄に入力された値を保持するための変数
   // location：実際に値が代入される変数、setLocation：locationの値を更新するための関数
   const [location, setLocation] = useState<string>("");
@@ -32,7 +33,7 @@ const SearchForm: React.VFC = () => {
             //必要と書いてあるappid、lat, lonは必ず記載する事
             //https://openweathermap.org/api/one-call-api#data
             //APIキー
-            appId: "c6a862db0ad7ac1360b43d3dff990690",
+            api_key: ApiKey,
             //コンソールの中のgeocodingResにあるlat（経度）を記入
             lat: geocodingRes.lat,
             //コンソールの中のgeocodingResにあるlng（緯度）を記入
