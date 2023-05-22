@@ -5,7 +5,7 @@ import { fetchTodayForecast } from "../../../api/openWeather";
 import styles from "./SearchForm.module.scss";
 
 const SearchForm: React.FC = () => {
-  const ApiKey = process.env.REACT_APP_OPENWEATEHR_APIKEY;
+  const ApiKey = process.env.REACT_APP_OPENWEATHER_APIKEY;
   // 入力欄に入力された値を保持するための変数
   // location：実際に値が代入される変数、setLocation：locationの値を更新するための関数
   const [location, setLocation] = useState<string>("");
