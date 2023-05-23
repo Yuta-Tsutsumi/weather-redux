@@ -12,10 +12,11 @@ const center = {
   lng: 139.77521,
 };
 
-const GoogleMapComponents: React.VFC = () => {
+const GoogleMapComponents: React.FC = () => {
+  const ApiKey = process.env.REACT_APP_GOOGLEMAPS_APIKEY;
   return (
     <div className={styles.root}>
-      <LoadScript googleMapsApiKey="AIzaSyAntz8OQsFZfMOtTLMSQvUnYRFlmSRRAwA">
+      <LoadScript googleMapsApiKey={ApiKey || ""}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
