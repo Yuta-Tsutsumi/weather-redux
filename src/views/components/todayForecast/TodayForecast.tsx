@@ -5,7 +5,7 @@ const number = 0;
 const string = "現在地";
 const TodayForecast: React.VFC = () => {
   return (
-    //簡単なUIの作成
+    //見た目だけのUIの作成
     <div className={styles.root}>
       <div className={styles.month}>{`${number}月${number}日 現在時刻`}</div>
       <div className={styles.position}>{string}</div>
