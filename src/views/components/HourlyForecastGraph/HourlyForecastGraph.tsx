@@ -11,6 +11,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+//温度データの入力
 const data = [
   {
     name: "10時",
